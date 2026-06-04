@@ -1,8 +1,8 @@
-empleado = "Juan Pérez"
+empleado = "Juan Lopez"
 salario_base = 1500.00
 bono = 150.00
 
-total_nomina = salario_base + bonos
+total_nomina = salario_base + bono
 
 print("\n=======================================")
 print("   SISTEMA DE NÓMINA - EMPOWER HR      ")
