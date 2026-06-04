@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.x
+  pre_build:
+    commands:
+      - echo "Iniciando validación de código para Empower HR..."
+  build:
+    commands:
+      - echo "Ejecutando pruebas del motor de nómina..."
+      - python3 calcular_nomina.py
+      - echo "¡Pruebas superadas con éxito! El código cumple con las reglas de negocio."
+  post_build:
+    commands:
+      - echo "Artefacto listo para ser inyectado de forma segura en la bóveda EC2 (Zero Trust)."
+artifacts:
+  files:
+    - '**/*'
