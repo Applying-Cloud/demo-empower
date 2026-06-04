@@ -1,4 +1,4 @@
-empleado = "Juan Lopez"
+empleado = "Juan Perez"
 salario_base = 1500.00
 bono = 150.00
 
